@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculater" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13-135635_this-free-icons-png-design-of-stylized-woman" translatesAutoresizingMaskIntoConstraints="NO" id="prA-rz-il3" userLabel="background">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxL-19-pHw" userLabel="heightText">
+                                <rect key="frame" x="157" y="372.5" width="100" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PsJ-bx-ylw" userLabel="weightText">
+                                <rect key="frame" x="157" y="468.5" width="100" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indtast Højde" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4db-jQ-v7a">
+                                <rect key="frame" x="156" y="341.5" width="102.5" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.98468308599999999" blue="0.99045026380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indtast vægt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="her-SJ-fAr">
+                                <rect key="frame" x="158.5" y="437.5" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.98468308599999999" blue="0.99045026380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzm-k1-UJJ" userLabel="bmiText">
+                                <rect key="frame" x="186" y="601.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="503-KF-2E5" userLabel="udregnBmi">
+                                <rect key="frame" x="161.5" y="548.5" width="91" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Udregn BMI">
+                                    <color key="titleColor" red="1" green="0.98468308599999999" blue="0.99045026380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61159287280875818" green="0.5363647129359681" blue="0.61318005181347157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="prA-rz-il3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1zr-bP-1SS"/>
+                            <constraint firstItem="prA-rz-il3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Lk-Tx-bfR"/>
+                            <constraint firstItem="bxL-19-pHw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="137" id="95O-Qt-sdk"/>
+                            <constraint firstItem="PsJ-bx-ylw" firstAttribute="top" secondItem="her-SJ-fAr" secondAttribute="bottom" constant="10" id="HIS-nn-xYT"/>
+                            <constraint firstItem="qzm-k1-UJJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JSy-di-B1G"/>
+                            <constraint firstItem="qzm-k1-UJJ" firstAttribute="top" secondItem="503-KF-2E5" secondAttribute="bottom" constant="20" id="Keo-JS-nV3"/>
+                            <constraint firstItem="503-KF-2E5" firstAttribute="top" secondItem="PsJ-bx-ylw" secondAttribute="bottom" constant="50" id="KpJ-l9-Zwt"/>
+                            <constraint firstItem="her-SJ-fAr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="On2-21-Ls6"/>
+                            <constraint firstItem="prA-rz-il3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S0c-30-Uhh"/>
+                            <constraint firstItem="PsJ-bx-ylw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="137" id="VCh-67-wye"/>
+                            <constraint firstItem="her-SJ-fAr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W3A-8C-kkM"/>
+                            <constraint firstItem="prA-rz-il3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bId-L4-lbB"/>
+                            <constraint firstItem="503-KF-2E5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dWM-30-h0T"/>
+                            <constraint firstItem="4db-jQ-v7a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="giI-HO-7id"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bxL-19-pHw" secondAttribute="trailing" constant="137" id="oxt-Gz-8dL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PsJ-bx-ylw" secondAttribute="trailing" constant="137" id="tCk-L3-I1l"/>
+                            <constraint firstItem="her-SJ-fAr" firstAttribute="top" secondItem="bxL-19-pHw" secondAttribute="bottom" constant="35" id="v1j-zA-h6r"/>
+                            <constraint firstItem="bxL-19-pHw" firstAttribute="top" secondItem="4db-jQ-v7a" secondAttribute="bottom" constant="10" id="zyp-XG-50A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="13-135635_this-free-icons-png-design-of-stylized-woman" width="1809" height="2270"/>
+    </resources>
+</document>
